@@ -10,7 +10,7 @@ from rdflib import Graph, Literal, XSD, RDF, Namespace, URIRef
 
 __author__ = "Michael Conlon"
 __copyright__ = "Copyright 2016 (c) Michael Conlon"
-__license__ = "New BSD License"
+__license__ = "Apache License 2.0"
 __version__ = "0.01"
 
 
@@ -50,8 +50,8 @@ def make_datetime_assertions(val, prec):
     g.add((uri, VIVO.dateTimePrecision, prec_uri))
     g.add((uri, VIVO.dateTime, Literal(date_str, datatype=XSD.datetime)))
 
-start_year = 2015
-end_year = 2016
+start_year = 1960
+end_year = 2030
 
 g = Graph()
 
