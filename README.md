@@ -1,8 +1,8 @@
 # date-rdf
 
-Make date RDF fpr Open VIVO
+Make date RDF for VIVO
 
-Simple Python CLI program for generating date RDF for OpenVIVO in a specified date range.  Generates year, year month and
+Simple Python CLI program for generating date RDF for VIVO in a specified date range.  Generates year, year month and
 year month day precision date time values for VIVO.  Each value has three triples:
 
     uri a vivo:DateTimeValue

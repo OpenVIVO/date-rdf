@@ -11,7 +11,7 @@ from rdflib import Graph, Literal, XSD, RDF, Namespace, URIRef
 __author__ = "Michael Conlon"
 __copyright__ = "Copyright 2016 (c) Michael Conlon"
 __license__ = "Apache License 2.0"
-__version__ = "0.01"
+__version__ = "0.02"
 
 
 def make_datetime_assertions(val, prec):
@@ -21,7 +21,7 @@ def make_datetime_assertions(val, prec):
 
     uri a vivo:DateTimeValue
     uri vivo:dateTimePrecision prec
-    uri vivo:dateTime val^"xsd:datetime"
+    uri vivo:dateTime val^^"xsd:datetime"
 
     :param val: a datetime with the literal value to be made into assertions
     :param prec: a string containing 'y', 'ym' or 'ymd' for one of the three precisions
@@ -84,6 +84,6 @@ while current_date <= end_date:
 
 #   Generate the RDF
 
-triples_file = open('dates.rdf', 'w')
-print >>triples_file, g.serialize(format='nt')
+triples_file = open('dates.n3', 'w')
+print >>triples_file, g.serialize(format='n3')
 triples_file.close()
