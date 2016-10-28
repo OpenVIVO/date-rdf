@@ -48,7 +48,7 @@ def make_datetime_assertions(val, prec):
 
     g.add((uri, RDF.type, VIVO.DateTimeValue))
     g.add((uri, VIVO.dateTimePrecision, prec_uri))
-    g.add((uri, VIVO.dateTime, Literal(date_str, datatype=XSD.datetime)))
+    g.add((uri, VIVO.dateTime, Literal(date_str, datatype=XSD.dateTime)))
 
 start_year = 1960
 end_year = 2030

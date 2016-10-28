@@ -7,7 +7,7 @@ year month day precision date time values for VIVO.  Each value has three triple
 
     uri a vivo:DateTimeValue
     uri vivo:dateTimePrecision prec
-    uri vivo:dateTime val^"xsd:datetime"
+    uri vivo:dateTime val^"xsd:dateTime"
     
 where prec is one of the three VIVO dateTimePrecision uris, and val is the isoformat datetime value
 
